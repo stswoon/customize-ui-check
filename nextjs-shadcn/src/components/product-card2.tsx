@@ -5,6 +5,7 @@ import {Badge} from "@/components/ui/badge";
 import {cn} from "@/lib/utils";
 import {Star} from "lucide-react"
 import {Button} from "@/components/ui/button";
+import {MyButton} from "@/components/my-ui/MyButton";
 
 type ProductCardProps = {
     title: string;
@@ -101,7 +102,7 @@ export function ProductCardShadcn({
             </CardContent>
 
             <CardFooter className="gap-2">
-                <Button
+                <MyButton
                     className={cn(
                         "inline-flex flex-1",
                         "bg-fuchsia-600  font-semibold text-white",
@@ -109,7 +110,7 @@ export function ProductCardShadcn({
                     )}
                 >
                     В корзину
-                </Button>
+                </MyButton>
                 <Button
                     className={cn(
                         "inline-flex h-10 w-10 items-center justify-center rounded-xl",
