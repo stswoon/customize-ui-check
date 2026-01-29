@@ -2,11 +2,12 @@ import styles from "./page.module.css";
 import ProductCard from "../components/ProductCard";
 import Box from "@mui/material/Box";
 import ProductCard2, {ProductCardModel} from "@/components/ProductCard2";
+import AdminUI from "@/components/AdminUI";
 
 const product: ProductCardModel = {
     id: "gaut-vega",
     title: "Мощный бинокль Gaut Vega с zoom-увеличением",
-    imageUrl: "/images/binoculars.png",
+    imageUrl: "/img2.png",
     price: 5777,
     oldPrice: 7777,
     rating: 4.5,
@@ -34,8 +35,20 @@ export default function Home() {
                 p: 2,
                 gap: 2
             }}>
-                <ProductCard/>
-                <ProductCard2 product={product}/>
+                <ProductCard
+                    title="Мощный бинокль Gaut Vega"
+                    subtitle="с zoom-увеличением. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Versions of Lorem Ipsum."
+                    price={5777}
+                    oldPrice={7777}
+                    currency="₽"
+                    rating={4.0}
+                    reviews={77}
+                    imageSrc="/img2.png"
+                    discount={12}
+                />
+                {/*<ProductCard2 product={product}/>*/}
+
+                <AdminUI></AdminUI>
             </Box>
         </div>
     );
