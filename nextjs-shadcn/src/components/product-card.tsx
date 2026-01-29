@@ -91,7 +91,7 @@ export function ProductCard() {
         </h3>
 
         <div className="flex items-center gap-1">
-          <div className="flex text-purple-600">
+            <div className="flex text-purple-600">
             <Star className="w-4 h-4 fill-current" />
             <Star className="w-4 h-4 fill-current" />
             <Star className="w-4 h-4 fill-current" />
