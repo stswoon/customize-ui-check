@@ -8,11 +8,6 @@ import {cn} from "@/lib/utils"
 export function MyCardTitle({className, ...props}: React.ComponentProps<typeof CardTitle>) {
     const {fontSize} = useUiStore()
 
-    const defaultClassName = cn(
-        "inline-flex h-10 w-10 items-center justify-center rounded-xl",
-        "border border-zinc-200 bg-white hover:bg-zinc-50 transition-colors"
-    );
-
     const sizeClasses: Record<string, string> = {
         sm: "text-sm",
         xl: "text-xl",
@@ -23,7 +18,7 @@ export function MyCardTitle({className, ...props}: React.ComponentProps<typeof C
     return (
         <CardTitle
             className={cn(
-                defaultClassName, className,
+                className,
                 fontSize && sizeClasses[fontSize]
             )}
             {...props}

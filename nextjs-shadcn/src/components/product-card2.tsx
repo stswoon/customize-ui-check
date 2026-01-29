@@ -84,7 +84,7 @@ export function ProductCardShadcn(
                     </div>
                 </div>
 
-                <MyCardTitle className="mt-2 text-base">{title}</MyCardTitle>
+                <MyCardTitle className="mt-5">{title}</MyCardTitle>
                 <CardDescription>{subtitle}</CardDescription>
 
                 <div className="mt-3 flex items-center gap-2">
