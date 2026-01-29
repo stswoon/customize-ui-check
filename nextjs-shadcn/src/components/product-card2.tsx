@@ -36,18 +36,9 @@ function Stars({value}: { value: number }) {
     );
 }
 
-export function ProductCardShadcn({
-                                      title,
-                                      subtitle,
-                                      price,
-                                      oldPrice,
-                                      currency,
-                                      rating,
-                                      reviews,
-                                      imageSrc,
-                                      discount
-                                  }: ProductCardProps) {
-
+export function ProductCardShadcn(
+    {title, subtitle, price, oldPrice, currency, rating, reviews, imageSrc, discount}: ProductCardProps
+) {
     return (
         <Card className="w-[300px]">
             <div className="relative h-[350px]">
@@ -103,23 +94,8 @@ export function ProductCardShadcn({
             </CardContent>
 
             <CardFooter className="gap-2">
-                <MyButton
-                    className={cn(
-                        "inline-flex flex-1",
-                        "bg-fuchsia-600  font-semibold text-white",
-                        "hover:bg-fuchsia-700 active:bg-fuchsia-800 transition-colors"
-                    )}
-                >
-                    В корзину
-                </MyButton>
-                <Button
-                    className={cn(
-                        "inline-flex h-10 w-10 items-center justify-center rounded-xl",
-                        "border border-zinc-200 bg-white hover:bg-zinc-50 transition-colors"
-                    )}
-                    aria-label="В избранное"
-                    title="В избранное"
-                >
+                <MyButton> В корзину </MyButton>
+                <Button aria-label="В избранное" title="В избранное">
                     <Heart className="h-5 w-5 text-zinc-700"/>
                 </Button>
             </CardFooter>
