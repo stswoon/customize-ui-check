@@ -46,12 +46,8 @@ export function ProductCardShadcn(
                     <div>
                         <div className="relative h-[380px] w-full">
                             <Image
-                                src={imageSrc}
-                                alt={title}
-                                fill
-                                className="object-contain"
-                                sizes="(max-width: 768px) 380px, 380px"
-                                priority={false}
+                                src={imageSrc} alt={title} fill className="object-contain"
+                                sizes="(max-width: 768px) 380px, 380px" priority={false}
                             />
                         </div>
                     </div>
@@ -76,12 +72,8 @@ export function ProductCardShadcn(
 
             <CardContent className="pt-4">
                 <div className="flex items-end gap-3">
-                    <div className="text-2xl font-extrabold">
-                        {formatMoney(price)} {currency}
-                    </div>
-                    <div className="pb-1 text-sm text-zinc-500 line-through">
-                        {formatMoney(oldPrice)} {currency}
-                    </div>
+                    <div className="text-2xl font-extrabold">{formatMoney(price)} {currency}</div>
+                    <div className="pb-1 text-sm text-zinc-500 line-through">{formatMoney(oldPrice)} {currency}</div>
                 </div>
 
                 <MyCardTitle className="mt-5">{title}</MyCardTitle>
@@ -95,7 +87,7 @@ export function ProductCardShadcn(
 
             <CardFooter className="gap-2">
                 <MyButton> В корзину </MyButton>
-                <Button aria-label="В избранное" title="В избранное">
+                <Button aria-label="В избранное" title="В избранное" className={"bg-amber-50"}>
                     <Heart className="h-5 w-5 text-zinc-700"/>
                 </Button>
             </CardFooter>

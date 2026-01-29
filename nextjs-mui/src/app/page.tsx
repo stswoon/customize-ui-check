@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import ProductCard from "../components/ProductCard";
+import ProductCardMUI from "../components/ProductCardMUI";
 import Box from "@mui/material/Box";
 import ProductCard2, {ProductCardModel} from "@/components/ProductCard2";
 import AdminUI from "@/components/AdminUI";
@@ -35,7 +35,7 @@ export default function Home() {
                 p: 2,
                 gap: 2
             }}>
-                <ProductCard
+                <ProductCardMUI
                     title="Мощный бинокль Gaut Vega"
                     subtitle="с zoom-увеличением. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Versions of Lorem Ipsum."
                     price={5777}
