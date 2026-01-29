@@ -1,11 +1,12 @@
 import * as React from "react";
 import Image from "next/image";
-import {Card, CardContent, CardDescription, CardFooter, CardTitle} from "@/components/ui/card";
+import {Card, CardContent, CardDescription, CardFooter} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
 import {cn} from "@/lib/utils";
 import {Star} from "lucide-react"
 import {Button} from "@/components/ui/button";
 import {MyButton} from "@/components/my-ui/MyButton";
+import {MyCardTitle} from "@/components/my-ui/MyCardTitle";
 
 type ProductCardProps = {
     title: string;
@@ -92,7 +93,7 @@ export function ProductCardShadcn({
                     </div>
                 </div>
 
-                <CardTitle className="mt-2 text-base">{title}</CardTitle>
+                <MyCardTitle className="mt-2 text-base">{title}</MyCardTitle>
                 <CardDescription>{subtitle}</CardDescription>
 
                 <div className="mt-3 flex items-center gap-2">
