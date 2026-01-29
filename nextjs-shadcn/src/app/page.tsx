@@ -1,16 +1,9 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import cn from "classnames";
-import {CardDemoBaseUi} from "@/app/CardDemoBaseUi";
+import { ProductCard } from "@/components/product-card";
 
 export default function Home() {
     return (
-        <div className="flex items-center justify-center h-screen">
-            {/*<div className={cn(styles.page, "text-3xl font-bold underline")}>*/}
-            {/*    Hello World!*/}
-            {/*</div>*/}
-
-            <CardDemoBaseUi/>
+        <div className="flex items-center justify-center min-h-screen bg-gray-100 p-8">
+            <ProductCard />
         </div>
     );
 }
