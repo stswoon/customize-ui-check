@@ -29,6 +29,8 @@ type ProductCardProps = {
     discount: number
 };
 
+//TODO theme!!!
+
 function propsMapping({cardTitleSize, buttonSize, buttonColor}) {
     // Logic for button color
     let btnColorProp: any = "secondary";

@@ -10,7 +10,7 @@ interface UiState {
 }
 
 export const useUiStore = create<UiState>((set) => ({
-    buttonColor: '',
+    buttonColor: 'gray',
     buttonSize: '',
     fontSize: '',
     setButtonColor: (color) => set({buttonColor: color}),
